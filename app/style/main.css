@@ -1,0 +1,407 @@
+
+/*FONTS*/
+
+@font-face {
+    font-family: 'fira_sansbook';
+    src: url('/fonts/firasans-book-webfont.eot');
+    src: url('/fonts/firasans-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/firasans-book-webfont.woff2') format('woff2'),
+         url('/fonts/firasans-book-webfont.woff') format('woff'),
+         url('/fonts/firasans-book-webfont.ttf') format('truetype'),
+         url('/fonts/firasans-book-webfont.svg#fira_sansbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fira_sanslight';
+    src: url('/fonts/firasans-light-webfont.eot');
+    src: url('/fonts/firasans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/firasans-light-webfont.woff2') format('woff2'),
+         url('/fonts/firasans-light-webfont.woff') format('woff'),
+         url('/fonts/firasans-light-webfont.ttf') format('truetype'),
+         url('/fonts/firasans-light-webfont.svg#fira_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fira_sanslight_italic';
+    src: url('/fonts/firasans-lightitalic-webfont.eot');
+    src: url('/fonts/firasans-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/firasans-lightitalic-webfont.woff2') format('woff2'),
+         url('/fonts/firasans-lightitalic-webfont.woff') format('woff'),
+         url('/fonts/firasans-lightitalic-webfont.ttf') format('truetype'),
+         url('/fonts/firasans-lightitalic-webfont.svg#fira_sanslight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fira_sansmedium';
+    src: url('/fonts/firasans-medium-webfont.eot');
+    src: url('/fonts/firasans-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/firasans-medium-webfont.woff2') format('woff2'),
+         url('/fonts/firasans-medium-webfont.woff') format('woff'),
+         url('/fonts/firasans-medium-webfont.ttf') format('truetype'),
+         url('/fonts/firasans-medium-webfont.svg#fira_sansmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fira_sansregular';
+    src: url('/fonts/firasans-regular-webfont.eot');
+    src: url('/fonts/firasans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/firasans-regular-webfont.woff2') format('woff2'),
+         url('/fonts/firasans-regular-webfont.woff') format('woff'),
+         url('/fonts/firasans-regular-webfont.ttf') format('truetype'),
+         url('/fonts/firasans-regular-webfont.svg#fira_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova_condensedSBd';
+    src: url('/fonts/proximanovacond-semibold-webfont.eot');
+    src: url('/fonts/proximanovacond-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/proximanovacond-semibold-webfont.woff2') format('woff2'),
+         url('/fonts/proximanovacond-semibold-webfont.woff') format('woff'),
+         url('/fonts/proximanovacond-semibold-webfont.ttf') format('truetype'),
+         url('/fonts/proximanovacond-semibold-webfont.svg#proxima_nova_condensedSBd') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*GRID*/
+
+.box{
+	width: 100%;
+	float: left;
+}
+.big-container{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.main-container{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.aside-col{
+	width: 250px;
+	float: left;
+	margin-right: 60px; 
+}
+.main-col{
+	width: 650px;
+	float: left;
+}
+
+/*BASIC*/
+
+body{
+	font-family: 'fira_sansbook';
+	font-size: 15px;
+}
+
+.main-bg{
+	background-image: url(/images/main-bg.png);
+	padding: 35px 0;
+}
+.top-bg,
+.bottom-bg{
+	background: rgb(239, 243, 247);
+}
+.top-bg{
+	padding: 30px 0;
+}
+.bottom-bg{
+	padding: 20px 0;
+}
+.mb{
+	margin-bottom: 25px;
+}
+.gradient-line{
+	height: 4px;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFkNjc3YiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ1JSIgc3RvcC1jb2xvcj0iIzFkNjc3YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzFkNjc3YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU1JSIgc3RvcC1jb2xvcj0iIzFkNjc3YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxZDY3N2IiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(left,  rgba(29,103,123,0) 0%, rgba(29,103,123,1) 45%, rgba(29,103,123,1) 50%, rgba(29,103,123,1) 55%, rgba(29,103,123,0) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(29,103,123,0)), color-stop(45%,rgba(29,103,123,1)), color-stop(50%,rgba(29,103,123,1)), color-stop(55%,rgba(29,103,123,1)), color-stop(100%,rgba(29,103,123,0)));
+	background: -webkit-linear-gradient(left,  rgba(29,103,123,0) 0%,rgba(29,103,123,1) 45%,rgba(29,103,123,1) 50%,rgba(29,103,123,1) 55%,rgba(29,103,123,0) 100%);
+	background: -o-linear-gradient(left,  rgba(29,103,123,0) 0%,rgba(29,103,123,1) 45%,rgba(29,103,123,1) 50%,rgba(29,103,123,1) 55%,rgba(29,103,123,0) 100%);
+	background: -ms-linear-gradient(left,  rgba(29,103,123,0) 0%,rgba(29,103,123,1) 45%,rgba(29,103,123,1) 50%,rgba(29,103,123,1) 55%,rgba(29,103,123,0) 100%);
+	background: linear-gradient(to right,  rgba(29,103,123,0) 0%,rgba(29,103,123,1) 45%,rgba(29,103,123,1) 50%,rgba(29,103,123,1) 55%,rgba(29,103,123,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001d677b', endColorstr='#001d677b',GradientType=1 );
+
+}
+
+
+/*HEADER*/
+
+.logo-area{
+	float: left;
+	margin-top: 5px;
+}
+
+.social-but-area{
+	float: right;
+}
+.social-list{
+	margin: 0;
+	padding: 0;
+}
+.social-point{
+	display: inline-block;
+}
+.social-link{
+	display: block;
+	width: 47px;
+	height: 47px;
+	background: url(/images/sprites.png) no-repeat;
+	margin-left: 20px;
+}
+.vk{background-position: 0 0;}
+.vk:hover,
+.vk:focus{background-position: -50px -1px ;}
+
+.tw{background-position: -101px -1px ;}
+.tw:hover,
+.tw:focus{background-position: -152px -1px ;}
+
+.fb{background-position: -100px -50px ;}
+.fb:hover,
+.fb:focus{background-position: -149px -50px ;}
+
+.git{background-position: 0 -50px ;}
+.git:hover,
+.git:focus{background-position: -49px -51px ;}
+
+/*NAVIGATION*/
+
+.nav-block{}
+.nav-list{
+	margin: 0;
+	padding: 0;
+	
+}
+.nav-list-point{
+	display: block;
+	padding: 0 10px;
+	background: rgb(239, 243, 247);
+}
+.nav-list-point:first-child {
+	border-radius: 4px 4px 0 0;
+}
+.nav-list-point:last-child {
+	border-radius: 0 0 4px 4px;
+}
+.nav-list-point.active {
+	background: rgb(59, 168, 192);;
+}
+.nav-list-link{
+	display: block;
+	font-size: 21px;
+	color: rgb(149, 154, 168);
+	text-decoration: none;
+	padding: 20px 18px;
+	border-bottom: 2px solid rgb(59, 168, 192);
+}
+.nav-list-point:last-child .nav-list-link{
+	border: none;
+}
+.nav-list-link:hover,
+.nav-list-link:focus{
+	color: rgb(59, 168, 192);
+}
+.nav-list-point.active .nav-list-link{
+	color: rgb(255,255,255);
+}
+
+/*CONTACTS*/
+
+.contacts-name{
+	color: rgb(255,255,255);
+	display: block;
+	background: rgb(59, 168, 192);
+	padding: 7px 0 0 20px;
+	margin: 0;
+	font-size: 21px;
+	border-radius: 4px 4px 0 0;
+}
+.cont-mail-block,
+.cont-tel-block,
+.cont-scype-block{
+	background-position: 40px center;
+	background-repeat: no-repeat;
+	padding: 9px 0 5px 70px;
+}
+.cont-mail-block{
+	background-image: url(/images/mail.png);
+	background-color: rgb(65, 185, 212);
+}
+.cont-tel-block{
+	background-image: url(/images/tel.png);
+	background-color: rgb(72, 203, 232);
+}
+.cont-scype-block{
+	background-image: url(/images/skype.png);
+	background-color: rgb(81, 218, 248);
+	border-radius: 0 0 4px 4px;
+}
+.contacts-link{
+	display: block;
+	color: rgb(255,255,255);
+	text-decoration: none;
+	font-size: 17px;
+}
+
+/**/
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+
+.main-section{
+	background: rgb(239, 243, 247);
+	border-radius: 4px;
+}
+.section-name{
+	display: inline-block;
+	margin: 0;
+	padding: 13px 22px;
+	border-bottom: 2px solid rgb(59, 168, 192);
+	color: rgb(59, 168, 192);
+	font-size: 27px;
+}
+.main-info,
+.job-info,
+.education-info{
+	padding: 20px 55px 40px 55px;
+}
+
+.wrapper-foto{
+	float: left;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 5px solid rgb(59, 168, 192);
+	margin-right: 20px;
+	margin-top: 20px;
+}
+.main-foto{
+	width: 100%;
+}
+.wrapper-info-list{
+	float: left;
+}
+.info-list{
+	margin: 0;
+	padding: 0;
+}
+.info-list-point{
+	display: block;
+}
+.info-list-name,
+.info-list-inform{
+	display: inline-block;
+	margin: 0 0 8px 0;
+}
+.info-list-name{
+	font-size: 17px;
+	font-family: 'fira_sansmedium';
+	margin-right: 12px;
+	color: rgb(74, 84, 93);
+}
+.info-list-inform{
+	color: rgb(55, 66, 77);
+}
+
+.skill-list{
+	display: inline-block;
+	width: 175px;
+	padding: 0;
+	float: right;
+}
+.skill-point{
+	display: inline-block;
+	padding: 2px 10px;
+	font-family: 'proxima_nova_condensedSBd';
+	color: rgb(255,255,255);
+	font-size: 14px;
+	border-radius: 2px;
+	background: -webkit-linear-gradient(90deg, #2e8ca2 0%, #2e8ca2 47%, #3ba8c0 48%, #3ba8c0 100%);
+	background: -moz-linear-gradient(90deg, #2e8ca2 0%, #2e8ca2 47%, #3ba8c0 48%, #3ba8c0 100%);
+	background: -o-linear-gradient(90deg, #2e8ca2 0%, #2e8ca2 47%, #3ba8c0 48%, #3ba8c0 100%);
+	background: -ms-linear-gradient(90deg, #2e8ca2 0%, #2e8ca2 47%, #3ba8c0 48%, #3ba8c0 100%);
+	background: linear-gradient(0deg, #2e8ca2 0%, #2e8ca2 47%, #3ba8c0 48%, #3ba8c0 100%);
+}
+
+.job-educ-list{
+	padding: 0;
+	margin: 0;
+}
+.job-point,
+.high-educ-point,
+.educ-point{
+	display: block;
+	padding: 0 0 0 65px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	margin-bottom: 15px;
+}
+.job-point{
+	background-image: url(/images/bag.png);
+}
+.high-educ-point{
+	background-image: url(/images/hat.png);
+}
+.educ-point{
+	background-image: url(/images/doc.png);
+	background-position: 8px center;
+}
+.job-educ-name,
+.job-educ-years{
+	margin: 0;
+	color: rgb(74, 84, 93);
+}
+.job-educ-name{
+	font-size: 17px;
+}
+.job-educ-years{
+	font-family: 'fira_sanslight';
+}
+
+/*FOOTER*/
+
+.footer-block{
+	position: relative;
+	text-align: center
+}
+.login{
+	float: left;
+	display: block;
+	width: 20px;
+	height: 32px;
+	background: url(/images/sprites.png) no-repeat;
+	background-position: -205px -10px ;
+}
+.login.sucess{
+	background-position: -204px -60px ;
+}
+
+
+
+
+
+
+
+
+
+
